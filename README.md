@@ -1,5 +1,16 @@
 # FalloutRacesTheRobotsPack
-
+
+RimWorld 1.6 Update
+Added official RimWorld 1.6 support and updated the mod metadata.
+Recompiled Robots.dll and FaceLaserTesting.dll against RimWorld 1.6.
+Updated changed RimWorld APIs, including PlanetTile, allowed-area handling, and turret ticking.
+Updated the renamed Vanilla Expanded Framework damage worker.
+Removed the obsolete JecsTools dependency and replaced its required functionality internally.
+Removed the outdated Achievements Expanded integration.
+Verified all referenced Humanoid Alien Races classes against HAR 1.6.
+Validated all XML files.
+No intentional changes were made to robot statistics, recipes, weapons, or gameplay balance.
+
 ![Image](https://i.imgur.com/buuPQel.png)
 
 Update of RamRods mod
