@@ -14,7 +14,7 @@ public class Building_Turret_Shoulder : Building_TurretGun
 
     public CompEquippableTurret Comp => Parental?.TryGetComp<CompEquippableTurret>();
 
-    private bool CanSetForcedTarget => mannableComp != null && PlayerControlled;
+    private new bool CanSetForcedTarget => mannableComp != null && PlayerControlled;
 
     private bool CanToggleHoldFire => PlayerControlled;
 
@@ -40,7 +40,7 @@ public class Building_Turret_Shoulder : Building_TurretGun
         Scribe_Values.Look(ref turretIsOn, "TurretIsOn");
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         if (Parental == null || Parental is { } pawn && (pawn.Dead || pawn.Downed)) //||this.comp==null)

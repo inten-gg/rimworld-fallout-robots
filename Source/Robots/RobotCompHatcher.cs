@@ -71,7 +71,8 @@ public class RobotCompHatcher : ThingComp
                             if (pawn.playerSettings != null && hatcheeParent.playerSettings != null &&
                                 hatcheeParent.Faction == hatcheeFaction)
                             {
-                                pawn.playerSettings.AreaRestriction = hatcheeParent.playerSettings.AreaRestriction;
+                                pawn.playerSettings.AreaRestrictionInPawnCurrentMap =
+                                    hatcheeParent.playerSettings.AreaRestrictionInPawnCurrentMap;
                             }
 
                             if (pawn.RaceProps.IsFlesh)
@@ -134,7 +135,7 @@ public class RobotCompHatcher : ThingComp
         }
     }
 
-    public override void PostPostGeneratedForTrader(TraderKindDef trader, int forTile, Faction forFaction)
+    public override void PostPostGeneratedForTrader(TraderKindDef trader, PlanetTile forTile, Faction forFaction)
     {
         base.PostPostGeneratedForTrader(trader, forTile, forFaction);
         hatcheeFaction = forFaction;

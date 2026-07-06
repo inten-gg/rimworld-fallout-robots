@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
   <identifier>RobotRamMod</identifier>
-  <version>1.21.0.0</version>
+  <version>1.6.0.0</version>
   <dependencies>
-    <li>JecsTools</li>
-    <li>VerbExpansionFramework</li>
+    <li>Harmony</li>
+    <li>VanillaExpandedFramework</li>
     <li>HumanoidAlienRaces2.0</li>
   </dependencies>
   <incompatibleWith />
   <loadAfter>
-    <li>HugsLib</li>
-    <li>JecsTools</li>
+    <li>Harmony</li>
     <li>HumanoidAlienRaces2.0</li>
-    <li>VerbExpansionFramework</li>
+    <li>VanillaExpandedFramework</li>
   </loadAfter>
 </Manifest>
