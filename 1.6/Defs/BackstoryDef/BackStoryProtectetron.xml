@@ -6,42 +6,15 @@
     <baseDesc>[PAWN_nameDef] was created to serve as a robo-worker.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
-      <li>
-        <key>Shooting</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Melee</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Construction</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Cooking</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Plants</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Animals</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Crafting</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Social</key>
-        <value>1</value>
-      </li>
-      <li>
-        <key>Mining</key>
-        <value>1</value>
-      </li>
+      <Shooting>1</Shooting>
+      <Melee>1</Melee>
+      <Construction>1</Construction>
+      <Cooking>1</Cooking>
+      <Plants>1</Plants>
+      <Animals>1</Animals>
+      <Crafting>1</Crafting>
+      <Social>1</Social>
+      <Mining>1</Mining>
     </skillGains>
     <spawnCategories>
       <li>ProtectetronCat</li>

@@ -88,11 +88,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Head</path>
-              <bodyPart>RobotHead</bodyPart>
+              
               <inFrontOfBody>false</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>RobotHead</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.415, 0.66)</Male>
@@ -119,11 +119,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/RobotEyeMiddle</path>
-              <bodyPart>MechanicalEyeMiddle</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>MechanicalEyeMiddle</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.42, 0.85)</Male>
@@ -149,11 +149,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/EyeStalkMiddle</path>
-              <bodyPart>EyeStalkMiddle</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>EyeStalkMiddle</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.42, 0.65)</Male>
@@ -179,11 +179,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/RobotEyeRight</path>
-              <bodyPart>MechanicalEyeRight</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>MechanicalEyeRight</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.08, 0.90)</Male>
@@ -209,11 +209,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/EyeStalkRight</path>
-              <bodyPart>EyeStalkRight</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>EyeStalkRight</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.08, 0.70)</Male>
@@ -239,11 +239,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/RobotEyeLeft</path>
-              <bodyPart>MechanicalEyeLeft</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>MechanicalEyeLeft</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.75, 0.90)</Male>
@@ -269,11 +269,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/EyeStalkLeft</path>
-              <bodyPart>EyeStalkLeft</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>EyeStalkLeft</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.75, 0.70)</Male>
@@ -299,12 +299,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Thruster</path>
-              <bodyPart>Thruster</bodyPart>
+              
               <inFrontOfBody>false</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>Thruster</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.419, 0.21)</Male>
@@ -325,12 +325,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Arm_Mount_Middle</path>
-              <bodyPart>ArmMountFront</bodyPart>
+              
               <inFrontOfBody>false</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>ArmMountFront</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.42, 0.07)</Male>
@@ -356,12 +356,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Arm_Mount_Right</path>
-              <bodyPart>ArmMountRight</bodyPart>
+              
               <inFrontOfBody>false</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>ArmMountRight</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.235, 0.245)</Male>
@@ -387,12 +387,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Arm_Mount_Left</path>
-              <bodyPart>ArmMountLeft</bodyPart>
+              
               <inFrontOfBody>false</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>ArmMountLeft</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.62, 0.245)</Male>
@@ -418,12 +418,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Segmented_Arm_Middle</path>
-              <bodyPart>SegmentedArmFront</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>SegmentedArmFront</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.4405, 0.22)</Male>
@@ -449,12 +449,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Segmented_Arm_Right</path>
-              <bodyPart>SegmentedArmRight</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>SegmentedArmRight</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.18, 0)</Male>
@@ -480,12 +480,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Segmented_Arm_Left</path>
-              <bodyPart>SegmentedArmLeft</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>SegmentedArmLeft</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.66, 0)</Male>
@@ -511,12 +511,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Pincer</path>
-              <bodyPart>FrontPincer</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>FrontPincer</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.418, -0.3)</Male>
@@ -542,12 +542,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Weapon</path>
-              <bodyPart>WeaponMount</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>WeaponMount</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.775, 0.14)</Male>
@@ -573,12 +573,12 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/Buzzsaw</path>
-              <bodyPart>RightBuzzSaw</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <drawnInBed>false</drawnInBed>
+              
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>RightBuzzSaw</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart><Posture Class="AlienRace.ExtendedGraphics.ConditionPosture"><drawnStanding>true</drawnStanding><drawnLaying>true</drawnLaying><drawnInBed>false</drawnInBed></Posture></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.4, 0.25)</Male>
@@ -834,7 +834,7 @@
     <race>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
+      <intelligence>Humanlike</intelligence><renderTree>Humanlike</renderTree>
       <makesFootprints>false</makesFootprints>
       <lifeExpectancy>2500</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>

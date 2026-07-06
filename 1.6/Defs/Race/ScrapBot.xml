@@ -88,11 +88,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>ScrapBot/RobotEyeMiddle</path>
-              <bodyPart>MechanicalEyeMiddle</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>MechanicalEyeMiddle</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Thin>(-0.42, 0.45)</Thin>
@@ -118,11 +118,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Things/EyeStalkMiddle</path>
-              <bodyPart>EyeStalkMiddle</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>EyeStalkMiddle</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Thin>(-0.42, 0.25)</Thin>
@@ -148,11 +148,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>ScrapBot/Head</path>
-              <bodyPart>RobotHead</bodyPart>
+              
               <inFrontOfBody>false</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>RobotHead</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Thin>(-0.415, 0.26)</Thin>
@@ -409,7 +409,7 @@
     <race>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
+      <intelligence>Humanlike</intelligence><renderTree>Humanlike</renderTree>
       <makesFootprints>false</makesFootprints>
       <lifeExpectancy>2500</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>

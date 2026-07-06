@@ -6,14 +6,8 @@
     <baseDesc>[PAWN_nameDef] was created to serve as a robo-nurse.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
-      <li>
-        <key>Melee</key>
-        <value>5</value>
-      </li>
-      <li>
-        <key>Medicine</key>
-        <value>8</value>
-      </li>
+      <Melee>5</Melee>
+      <Medicine>8</Medicine>
     </skillGains>
     <spawnCategories>
       <li>NurseHandyCat</li>

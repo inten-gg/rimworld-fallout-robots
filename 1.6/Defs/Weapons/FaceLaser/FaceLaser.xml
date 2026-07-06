@@ -171,7 +171,6 @@
         <li>RoboticHead</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Alpha</wornGraphicPath>
-      <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace>
       <layers>
         <li>Overhead</li>
       </layers>

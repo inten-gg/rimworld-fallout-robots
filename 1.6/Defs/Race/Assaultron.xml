@@ -88,11 +88,11 @@
             <li>
               <drawSize>1</drawSize>
               <path>Assaultron/Head/AssaultronHead</path>
-              <bodyPart>RoboticHead</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>RoboticHead</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Thin>(-0.415, 0.26)</Thin>
@@ -392,7 +392,7 @@
     <race>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
+      <intelligence>Humanlike</intelligence><renderTree>Humanlike</renderTree>
       <makesFootprints>false</makesFootprints>
       <lifeExpectancy>2500</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>

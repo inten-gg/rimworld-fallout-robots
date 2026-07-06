@@ -9,14 +9,8 @@
     <baseDesc>[PAWN_nameDef] was created to serve as a robo-assassin.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
-      <li>
-        <key>Melee</key>
-        <value>8</value>
-      </li>
-      <li>
-        <key>Shooting</key>
-        <value>8</value>
-      </li>
+      <Melee>8</Melee>
+      <Shooting>8</Shooting>
     </skillGains>
     <workDisables>
       <li>Social</li>

@@ -88,10 +88,10 @@
             <li>
               <drawSize>1.5</drawSize>
               <path>Sentrybot/Head/Naked_Thin</path>
-              <bodyPart>RobotChassis</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>RobotChassis</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Thin>(-0.415, 0.76)</Thin>
@@ -356,7 +356,7 @@
     <race>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
+      <intelligence>Humanlike</intelligence><renderTree>Humanlike</renderTree>
       <makesFootprints>false</makesFootprints>
       <lifeExpectancy>2500</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>

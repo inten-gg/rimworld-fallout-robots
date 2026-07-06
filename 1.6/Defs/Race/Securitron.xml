@@ -88,11 +88,11 @@
             <li>
               <drawSize>1.75</drawSize>
               <path>Securitron/Head/Average_Normal</path>
-              <bodyPart>RobotChassis</bodyPart>
+              
               <inFrontOfBody>false</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>RobotChassis</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.42, 0.52)</Male>
@@ -127,11 +127,11 @@
             <li>
               <drawSize>1.75</drawSize>
               <path>Securitron/Faces/Mk1</path>
-              <bodyPart>MiddleScreen</bodyPart>
+              
               <inFrontOfBody>true</inFrontOfBody>
               <colorChannel>skin</colorChannel>
               <defaultOffset>Tail</defaultOffset>
-              <offsets>
+              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>MiddleScreen</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
                 <south>
                   <bodyTypes>
                     <Male>(-0.42, 0.52)</Male>
@@ -400,7 +400,7 @@
     <race>
       <thinkTreeMain>Humanlike</thinkTreeMain>
       <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
+      <intelligence>Humanlike</intelligence><renderTree>Humanlike</renderTree>
       <makesFootprints>false</makesFootprints>
       <lifeExpectancy>2500</lifeExpectancy>
       <nameCategory>HumanStandard</nameCategory>

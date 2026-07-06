@@ -6,14 +6,8 @@
     <baseDesc>[PAWN_nameDef] was created to serve as a robo-tank.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
-      <li>
-        <key>Shooting</key>
-        <value>10</value>
-      </li>
-      <li>
-        <key>Animals</key>
-        <value>-20</value>
-      </li>
+      <Shooting>10</Shooting>
+      <Animals>-20</Animals>
     </skillGains>
     <spawnCategories>
       <li>SentrybotCat</li>

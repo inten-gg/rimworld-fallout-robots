@@ -6,14 +6,8 @@
     <baseDesc>[PAWN_nameDef] was created to serve as a robo-guard.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
-      <li>
-        <key>Shooting</key>
-        <value>8</value>
-      </li>
-      <li>
-        <key>Animals</key>
-        <value>-20</value>
-      </li>
+      <Shooting>8</Shooting>
+      <Animals>-20</Animals>
     </skillGains>
     <spawnCategories>
       <li>SecuritronCat</li>

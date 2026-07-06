@@ -6,14 +6,8 @@
     <baseDesc>[PAWN_nameDef] was created to serve as a robo-hauler.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
-      <li>
-        <key>Melee</key>
-        <value>5</value>
-      </li>
-      <li>
-        <key>Animals</key>
-        <value>-20</value>
-      </li>
+      <Melee>5</Melee>
+      <Animals>-20</Animals>
     </skillGains>
     <spawnCategories>
       <li>ScrapBotCat</li>

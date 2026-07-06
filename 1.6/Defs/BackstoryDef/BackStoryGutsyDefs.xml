@@ -6,18 +6,9 @@
     <baseDesc>[PAWN_nameDef] was created to serve as a robo-soldier.</baseDesc>
     <slot>Childhood</slot>
     <skillGains>
-      <li>
-        <key>Shooting</key>
-        <value>8</value>
-      </li>
-      <li>
-        <key>Melee</key>
-        <value>5</value>
-      </li>
-      <li>
-        <key>Animals</key>
-        <value>-20</value>
-      </li>
+      <Shooting>8</Shooting>
+      <Melee>5</Melee>
+      <Animals>-20</Animals>
     </skillGains>
     <spawnCategories>
       <li>GutsyCat</li>
