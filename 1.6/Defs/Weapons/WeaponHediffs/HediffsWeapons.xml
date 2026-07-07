@@ -7,6 +7,7 @@
     <ActivateFeatures>
       <li>HediffVerbs</li>
       <li>IntegratedToggle</li>
+      <li>Drawing</li>
       <li>IndependentFire</li>
     </ActivateFeatures>
   </MVCF.ModDef>
@@ -341,8 +342,27 @@
         <verbProps>
           <li>
             <label>mounted mini gun</label>
-            <draw>false</draw>
             <canBeToggled>true</canBeToggled>
+            <comps>
+              <li Class="MVCF.VerbComps.VerbCompProperties_Draw">
+                <compClass>MVCF.VerbComps.VerbComp_Draw</compClass>
+                <graphic>
+                  <texPath>GUI/Commands/machine_gun</texPath>
+                  <graphicClass>Graphic_Single</graphicClass>
+                  <shaderType>Cutout</shaderType>
+                </graphic>
+                <drawScale>0.65</drawScale>
+                <specificPositions>
+                  <li>
+                    <defName>Sentrybot</defName>
+                    <Down>(-0.02, 0.42)</Down>
+                    <Up>(0.40, 0.75)</Up>
+                    <Right>(-0.15, 0.36)</Right>
+                    <Left>(0.15, 0.36)</Left>
+                  </li>
+                </specificPositions>
+              </li>
+            </comps>
             <!-- <canFireIndependently>true</canFireIndependently> -->
           </li>
         </verbProps>
@@ -499,8 +519,27 @@
         <verbProps>
           <li>
             <label>mounted missile launcher</label>
-            <draw>false</draw>
             <canBeToggled>true</canBeToggled>
+            <comps>
+              <li Class="MVCF.VerbComps.VerbCompProperties_Draw">
+                <compClass>MVCF.VerbComps.VerbComp_Draw</compClass>
+                <graphic>
+                  <texPath>GUI/Commands/MIRV</texPath>
+                  <graphicClass>Graphic_Single</graphicClass>
+                  <shaderType>Cutout</shaderType>
+                </graphic>
+                <drawScale>0.65</drawScale>
+                <specificPositions>
+                  <li>
+                    <defName>Sentrybot</defName>
+                    <Down>(-1.00, 0.42)</Down>
+                    <Up>(-0.40, 0.75)</Up>
+                    <Right>(-0.62, 0.36)</Right>
+                    <Left>(0.62, 0.36)</Left>
+                  </li>
+                </specificPositions>
+              </li>
+            </comps>
             <!-- <canFireIndependently>true</canFireIndependently> -->
           </li>
         </verbProps>
