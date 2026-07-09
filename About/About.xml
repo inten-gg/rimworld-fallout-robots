@@ -31,7 +31,6 @@
     <li>brrainz.harmony</li>
     <li>erdelf.HumanoidAlienRaces</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-    <li>syrchalis.traitvalue</li>
   </loadAfter>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of RamRods mod
@@ -42,7 +41,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - As the MVCF-mod has been absorbed into [url=https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] the requirement have changed for the mod
 - Since the 1.1 version of the mod was rewritten to not use the mounted weapons the 1.0 version was chosen for the update instead
 - Added all mountable weapons as craftable in the Machining bench
-- Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value[/url]
 
 Regarding texture issues in 1.3:
 "Sentrybot texture caching bug: You have to disable "texture compression" and also in the Mod Options for Vanilla Framework Expanded ENABLE "disable texture caching"
@@ -186,3 +184,4 @@ ideas and suggestions would also be welcome!
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2347136687][img]https://img.shields.io/github/v/release/emipa606/FalloutRacesTheRobotsPack?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
   <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
 </ModMetaData>
+

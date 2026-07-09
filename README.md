@@ -1,4 +1,4 @@
-# FalloutRacesTheRobotsPack
+﻿# FalloutRacesTheRobotsPack
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -10,7 +10,6 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - As the MVCF-mod has been absorbed into https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla Expanded Framework the requirement have changed for the mod
 - Since the 1.1 version of the mod was rewritten to not use the mounted weapons the 1.0 version was chosen for the update instead
 - Added all mountable weapons as craftable in the Machining bench
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 
 Regarding texture issues in 1.3:
 "Sentrybot texture caching bug: You have to disable "texture compression" and also in the Mod Options for Vanilla Framework Expanded ENABLE "disable texture caching"
@@ -108,10 +107,7 @@ Mounted Missle Launcher
 Mounted Minigun
 The hidden West direction was added
 
-This mod requires 
-Jecs Tools
-Humanoid Alien Races 2.0 
-Verb Expansion Framework.
+This mod requires Harmony, Humanoid Alien Races 2.0, and Vanilla Expanded Framework.
 
 Not compatible with Alien Vs Predator.
 Will be soon.
@@ -150,4 +146,5 @@ ideas and suggestions would also be welcome!
 
 
 https://steamcommunity.com/sharedfiles/filedetails/changelog/2347136687]![Image](https://img.shields.io/github/v/release/emipa606/FalloutRacesTheRobotsPack?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
+
 
