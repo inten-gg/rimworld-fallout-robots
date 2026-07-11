@@ -16,6 +16,11 @@
     <gender>None</gender>
   </HeadTypeDef>
   <HeadTypeDef ParentName="AverageBase">
+    <defName>LibertyPrime_Average_Normal</defName>
+    <graphicPath>LibertyPrime/Head/Naked_Thin</graphicPath>
+    <gender>None</gender>
+  </HeadTypeDef>
+  <HeadTypeDef ParentName="AverageBase">
     <defName>Blank_Average_Normal</defName>
     <graphicPath>Blank/Head/Average_Normal</graphicPath>
     <gender>None</gender>

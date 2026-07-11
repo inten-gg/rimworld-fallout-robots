@@ -56,6 +56,12 @@ public class RobotCompHatcher : ThingComp
     {
         try
         {
+            if (Props.hatcherPawn?.defName == "Robot_LibertyPrime_Colonist" &&
+                LibertyPrimeUtility.Exists(includeKits: false))
+            {
+                return;
+            }
+
             var request = new PawnGenerationRequest(Props.hatcherPawn, Faction.OfPlayer,
                 PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 1f, false, true, allowFood: true,
                 allowAddictions: false);

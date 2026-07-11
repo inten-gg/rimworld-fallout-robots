@@ -7,7 +7,6 @@
     <ActivateFeatures>
       <li>HediffVerbs</li>
       <li>IntegratedToggle</li>
-      <li>Drawing</li>
       <li>IndependentFire</li>
     </ActivateFeatures>
   </MVCF.ModDef>
@@ -342,27 +341,8 @@
         <verbProps>
           <li>
             <label>mounted mini gun</label>
+            <draw>false</draw>
             <canBeToggled>true</canBeToggled>
-            <comps>
-              <li Class="MVCF.VerbComps.VerbCompProperties_Draw">
-                <compClass>MVCF.VerbComps.VerbComp_Draw</compClass>
-                <graphic>
-                  <texPath>GUI/Commands/machine_gun</texPath>
-                  <graphicClass>Graphic_Single</graphicClass>
-                  <shaderType>Cutout</shaderType>
-                </graphic>
-                <drawScale>0.65</drawScale>
-                <specificPositions>
-                  <li>
-                    <defName>Sentrybot</defName>
-                    <Down>(-0.02, 0.42)</Down>
-                    <Up>(0.40, 0.75)</Up>
-                    <Right>(-0.15, 0.36)</Right>
-                    <Left>(0.15, 0.36)</Left>
-                  </li>
-                </specificPositions>
-              </li>
-            </comps>
             <!-- <canFireIndependently>true</canFireIndependently> -->
           </li>
         </verbProps>
@@ -519,27 +499,8 @@
         <verbProps>
           <li>
             <label>mounted missile launcher</label>
+            <draw>false</draw>
             <canBeToggled>true</canBeToggled>
-            <comps>
-              <li Class="MVCF.VerbComps.VerbCompProperties_Draw">
-                <compClass>MVCF.VerbComps.VerbComp_Draw</compClass>
-                <graphic>
-                  <texPath>GUI/Commands/MIRV</texPath>
-                  <graphicClass>Graphic_Single</graphicClass>
-                  <shaderType>Cutout</shaderType>
-                </graphic>
-                <drawScale>0.65</drawScale>
-                <specificPositions>
-                  <li>
-                    <defName>Sentrybot</defName>
-                    <Down>(-1.00, 0.42)</Down>
-                    <Up>(-0.40, 0.75)</Up>
-                    <Right>(-0.62, 0.36)</Right>
-                    <Left>(0.62, 0.36)</Left>
-                  </li>
-                </specificPositions>
-              </li>
-            </comps>
             <!-- <canFireIndependently>true</canFireIndependently> -->
           </li>
         </verbProps>
@@ -692,4 +653,121 @@
 		</addedPartProps>
 		<spawnThingOnRemoved>MountedPlasmaRifle</spawnThingOnRemoved>
     </HediffDef-->
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>LibertyPrimeEyeLaser</defName>
+    <label>Liberty Prime eye laser</label>
+    <description>Liberty Prime's integrated eye laser. It fires a precise, armor-piercing beam of searing energy.</description>
+    <labelNoun>a Liberty Prime eye laser</labelNoun>
+    <comps>
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+        <verbs>
+          <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <label>eye laser</label>
+            <accuracyTouch>0.90</accuracyTouch>
+            <accuracyShort>0.95</accuracyShort>
+            <accuracyMedium>0.90</accuracyMedium>
+            <accuracyLong>0.82</accuracyLong>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>LibertyPrimeEyeLaserBeam</defaultProjectile>
+            <warmupTime>2.0</warmupTime>
+            <range>39.9</range>
+            <soundCast>ChargeLance_Fire</soundCast>
+            <soundCastTail>GunTail_Light</soundCastTail>
+            <muzzleFlashScale>18</muzzleFlashScale>
+            <commandIcon>GUI/Commands/laser_rifle</commandIcon>
+          </li>
+        </verbs>
+        <verbProps>
+          <li>
+            <label>eye laser</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+          </li>
+        </verbProps>
+      </li>
+    </comps>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>LibertyPrimeEyeLaserBeam</defName>
+    <label>eye laser beam</label>
+    <graphicData>
+      <texPath>Effects/Laser</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>3</drawSize>
+    </graphicData>
+    <projectile>
+      <speed>120</speed>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <damageAmountBase>40</damageAmountBase>
+      <damageDef>Burn</damageDef>
+    </projectile>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>LibertyPrimeMiniNukeLauncher</defName>
+    <label>Liberty Prime mini nuke launcher</label>
+    <description>Liberty Prime's integrated mini nuke launcher. It is devastating, slow to fire, and intended for siege-scale targets.</description>
+    <labelNoun>a Liberty Prime mini nuke launcher</labelNoun>
+    <comps>
+      <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+        <verbs>
+          <li>
+            <verbClass>RobotRamRod.Verb_Shoot_ConsumeLibertyPrimeMiniNuke</verbClass>
+            <label>mini nuke</label>
+            <forcedMissRadius>3.9</forcedMissRadius>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>LibertyPrimeMiniNukeProjectile</defaultProjectile>
+            <warmupTime>8.0</warmupTime>
+            <range>55.9</range>
+            <soundCast>GunTail_Heavy</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>22</muzzleFlashScale>
+            <targetParams>
+              <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <commandIcon>GUI/Commands/missile_launcher</commandIcon>
+          </li>
+        </verbs>
+        <verbProps>
+          <li>
+            <label>mini nuke</label>
+            <draw>false</draw>
+            <canBeToggled>true</canBeToggled>
+          </li>
+        </verbProps>
+      </li>
+    </comps>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>LibertyPrimeMiniNukeProjectile</defName>
+    <label>mini nuke</label>
+    <graphicData>
+      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.5</drawSize>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>80</damageAmountBase>
+      <armorPenetrationBase>0.70</armorPenetrationBase>
+      <explosionRadius>7.9</explosionRadius>
+      <speed>35</speed>
+    </projectile>
+  </ThingDef>
 </Defs>

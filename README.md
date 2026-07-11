@@ -1,4 +1,4 @@
-﻿# FalloutRacesTheRobotsPack
+# FalloutRacesTheRobotsPack
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -10,6 +10,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1907125167
 - As the MVCF-mod has been absorbed into https://steamcommunity.com/workshop/filedetails/?id=2023507013]Vanilla Expanded Framework the requirement have changed for the mod
 - Since the 1.1 version of the mod was rewritten to not use the mounted weapons the 1.0 version was chosen for the update instead
 - Added all mountable weapons as craftable in the Machining bench
+- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2451324814][SYR] Trait Value
 
 Regarding texture issues in 1.3:
 "Sentrybot texture caching bug: You have to disable "texture compression" and also in the Mod Options for Vanilla Framework Expanded ENABLE "disable texture caching"
@@ -48,7 +49,9 @@ The Securitron is an amazing fighter mounted with a Gatling Laser for far armore
 
 The Assaultron is a nimble assassin capable of devistating colonies with it's AI independently fired lasers.
 
-The Sentrybot is a tank. 
+The Sentrybot is a tank.
+
+Liberty Prime is a unique colossal late-game combat robot. Only one can exist at a time. It is slower, absurdly expensive to build, limited to combat duties, and armed only with an integrated eye laser and mini nuke launcher.
 
 Scrapbot Robot costs
 25 Plasteel
@@ -94,9 +97,23 @@ Sentry
 16 Components
 8 Advanced Components
 
+Liberty Prime
+2500 Plasteel
+5000 Steel
+1000 Uranium
+250 Components
+100 Advanced Components
+500 Gold
+
+Liberty Prime mini nuke ammo
+75 Uranium
+25 Plasteel
+50 Chemfuel
+2 Components
+
 
 Features:
-8 Full Playable Races
+9 Full Playable Races
 Replacement Parts
 Built in Flamethrower
 Built in Plasma Rifle
@@ -105,9 +122,14 @@ Built in 9mm machine gun
 Built in weak lasers
 Mounted Missle Launcher 
 Mounted Minigun
+Liberty Prime eye laser
+Liberty Prime mini nukes, crafted as separate ammunition
 The hidden West direction was added
 
-This mod requires Harmony, Humanoid Alien Races 2.0, and Vanilla Expanded Framework.
+This mod requires 
+Jecs Tools
+Humanoid Alien Races 2.0 
+Verb Expansion Framework.
 
 Not compatible with Alien Vs Predator.
 Will be soon.
@@ -146,5 +168,4 @@ ideas and suggestions would also be welcome!
 
 
 https://steamcommunity.com/sharedfiles/filedetails/changelog/2347136687]![Image](https://img.shields.io/github/v/release/emipa606/FalloutRacesTheRobotsPack?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
 
