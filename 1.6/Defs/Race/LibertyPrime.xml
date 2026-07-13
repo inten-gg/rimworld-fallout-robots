@@ -79,43 +79,11 @@
           <bodyTypes Inherit="False">
             <li>Thin</li>
           </bodyTypes>
-          <customDrawSize>(2.2, 2.2)</customDrawSize>
-          <customHeadDrawSize>(0.5, 0.5)</customHeadDrawSize>
+          <customDrawSize>(2.6, 2.6)</customDrawSize>
+          <customHeadDrawSize>(0.01, 0.01)</customHeadDrawSize>
           <customPortraitDrawSize>(0.5, 0.5)</customPortraitDrawSize>
-          <customPortraitHeadDrawSize>(0.5, 0.5)</customPortraitHeadDrawSize>
+          <customPortraitHeadDrawSize>(0.01, 0.01)</customPortraitHeadDrawSize>
           <headOffset>(0, 0)</headOffset>
-          <bodyAddons>
-            <li>
-              <drawSize>2.2</drawSize>
-              <path>LibertyPrime/Head/Naked_Thin</path>
-              
-              <inFrontOfBody>true</inFrontOfBody>
-              <colorChannel>skin</colorChannel>
-              <conditions><BodyPart Class="AlienRace.ExtendedGraphics.ConditionBodyPart"><bodyPart>RobotChassis</bodyPart><drawWithoutPart>false</drawWithoutPart></BodyPart></conditions><offsets>
-                <south>
-                  <bodyTypes>
-                    <Thin>(-0.415, 0.76)</Thin>
-                  </bodyTypes>
-                  <layerOffset>0.02</layerOffset>
-                </south>
-                <north>
-                  <bodyTypes>
-                    <Thin>(0, 1.1)</Thin>
-                  </bodyTypes>
-                  <layerOffset>0.02</layerOffset>
-                </north>
-                <east>
-                  <bodyTypes>
-                    <Thin>(-0.455, 0.66)</Thin>
-                  </bodyTypes>
-                  <headTypes>
-                    <LibertyPrime_Average_Normal>(0, 0)</LibertyPrime_Average_Normal>
-                  </headTypes>
-                  <layerOffset>0.02</layerOffset>
-                </east>
-              </offsets>
-            </li>
-          </bodyAddons>
           <colorChannels>
             <li>
               <name>skin</name>
@@ -255,7 +223,7 @@
     <statBases>
       <ToxicResistance>1</ToxicResistance>
       <MarketValue>8000</MarketValue>
-      <MoveSpeed>2.6</MoveSpeed>
+      <MoveSpeed>2.1</MoveSpeed>
       <Flammability>0</Flammability>
       <ImmunityGainSpeed>50</ImmunityGainSpeed>
       <CarryingCapacity>300</CarryingCapacity>

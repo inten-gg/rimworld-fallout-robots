@@ -227,26 +227,6 @@
       </li>
     </comps>
   </ThingDef>
-  <ThingDef ParentName="ResourceBase">
-    <defName>LibertyPrimeMiniNukeAmmo</defName>
-    <label>Liberty Prime mini nuke</label>
-    <description>A compact nuclear warhead built for Liberty Prime's integrated mini nuke launcher. Liberty Prime consumes one from its inventory each time the mini nuke launcher fires.</description>
-    <graphicData>
-      <texPath>LibertyPrime/Items/Microfusion_Cell_Pack</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1.4,1.4)</drawSize>
-    </graphicData>
-    <statBases>
-      <MarketValue>750</MarketValue>
-      <Mass>5</Mass>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>0.8</Flammability>
-      <DeteriorationRate>0</DeteriorationRate>
-    </statBases>
-    <stackLimit>25</stackLimit>
-    <tradeability>None</tradeability>
-    <generateCommonality>0</generateCommonality>
-  </ThingDef>
   <RecipeDef>
     <defName>CreateScrapBot</defName>
     <label>Create Scrapbot</label>
@@ -752,63 +732,6 @@
     </products>
     <researchPrerequisite>LibertyPrimeResearch</researchPrerequisite>
     <workAmount>150000</workAmount>
-    <unfinishedThingDef>UnfinishedRobot</unfinishedThingDef>
-    <workSkill>Crafting</workSkill>
-    <effectWorking>Repair</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
-    <recipeUsers>
-      <li>TableMachining</li>
-    </recipeUsers>
-  </RecipeDef>
-  <RecipeDef>
-    <defName>CreateLibertyPrimeMiniNukeAmmo</defName>
-    <label>Create Liberty Prime mini nuke</label>
-    <description>Create one compact mini nuke for Liberty Prime's integrated launcher.</description>
-    <jobString>Making mini nuke</jobString>
-    <allowMixingIngredients>false</allowMixingIngredients>
-    <skillRequirements>
-      <Crafting>12</Crafting>
-    </skillRequirements>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Uranium</li>
-          </thingDefs>
-        </filter>
-        <count>75</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Plasteel</li>
-          </thingDefs>
-        </filter>
-        <count>25</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Chemfuel</li>
-          </thingDefs>
-        </filter>
-        <count>50</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
-      </li>
-    </ingredients>
-    <products>
-      <LibertyPrimeMiniNukeAmmo>1</LibertyPrimeMiniNukeAmmo>
-    </products>
-    <researchPrerequisite>LibertyPrimeResearch</researchPrerequisite>
-    <workAmount>6000</workAmount>
     <unfinishedThingDef>UnfinishedRobot</unfinishedThingDef>
     <workSkill>Crafting</workSkill>
     <effectWorking>Repair</effectWorking>

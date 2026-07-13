@@ -10,6 +10,14 @@
       <li>IndependentFire</li>
     </ActivateFeatures>
   </MVCF.ModDef>
+  <HediffDef Name="LibertyPrimeIntegratedWeaponBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.5, 0.5, 0.9)</defaultLabelColor>
+    <isBad>false</isBad>
+    <makesAlert>false</makesAlert>
+    <makesSickThought>false</makesSickThought>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>MountedFlamethrower</defName>
     <label>mounted flamethrower</label>
@@ -653,65 +661,62 @@
 		</addedPartProps>
 		<spawnThingOnRemoved>MountedPlasmaRifle</spawnThingOnRemoved>
     </HediffDef-->
-  <HediffDef ParentName="ImplantHediffBase">
+  <HediffDef ParentName="LibertyPrimeIntegratedWeaponBase">
     <defName>LibertyPrimeEyeLaser</defName>
     <label>Liberty Prime eye laser</label>
-    <description>Liberty Prime's integrated eye laser. It fires a precise, armor-piercing beam of searing energy.</description>
+    <description>Liberty Prime's integrated eye laser. It projects a sustained, armor-piercing beam of searing energy.</description>
     <labelNoun>a Liberty Prime eye laser</labelNoun>
     <comps>
       <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
-            <verbClass>Verb_Shoot</verbClass>
-            <label>eye laser</label>
+            <verbClass>RobotRamRod.Verb_Shoot_LibertyPrimeEyeLaser</verbClass>
+            <label>sustained eye laser</label>
             <accuracyTouch>0.90</accuracyTouch>
             <accuracyShort>0.95</accuracyShort>
             <accuracyMedium>0.90</accuracyMedium>
             <accuracyLong>0.82</accuracyLong>
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>LibertyPrimeEyeLaserBeam</defaultProjectile>
-            <warmupTime>2.0</warmupTime>
+            <warmupTime>0.8</warmupTime>
             <range>39.9</range>
+            <burstShotCount>32</burstShotCount>
+            <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
             <soundCast>ChargeLance_Fire</soundCast>
             <soundCastTail>GunTail_Light</soundCastTail>
-            <muzzleFlashScale>18</muzzleFlashScale>
-            <commandIcon>GUI/Commands/laser_rifle</commandIcon>
+            <muzzleFlashScale>10</muzzleFlashScale>
+            <commandIcon>GUI/Commands/LibertyPrime_EyeLaser</commandIcon>
           </li>
         </verbs>
         <verbProps>
           <li>
-            <label>eye laser</label>
+            <label>sustained eye laser</label>
             <draw>false</draw>
             <canBeToggled>true</canBeToggled>
           </li>
         </verbProps>
       </li>
     </comps>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1</partEfficiency>
-      <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BaseBullet">
     <defName>LibertyPrimeEyeLaserBeam</defName>
-    <label>eye laser beam</label>
+    <label>sustained eye laser beam</label>
     <graphicData>
       <texPath>Effects/Laser</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
-      <drawSize>3</drawSize>
+      <drawSize>4</drawSize>
     </graphicData>
     <projectile>
-      <speed>120</speed>
-      <armorPenetrationBase>0.45</armorPenetrationBase>
-      <damageAmountBase>40</damageAmountBase>
+      <speed>200</speed>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <damageAmountBase>3</damageAmountBase>
       <damageDef>Burn</damageDef>
     </projectile>
   </ThingDef>
 
-  <HediffDef ParentName="ImplantHediffBase">
+  <HediffDef ParentName="LibertyPrimeIntegratedWeaponBase">
     <defName>LibertyPrimeMiniNukeLauncher</defName>
     <label>Liberty Prime mini nuke launcher</label>
     <description>Liberty Prime's integrated mini nuke launcher. It is devastating, slow to fire, and intended for siege-scale targets.</description>
@@ -720,12 +725,13 @@
       <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
-            <verbClass>RobotRamRod.Verb_Shoot_ConsumeLibertyPrimeMiniNuke</verbClass>
+            <verbClass>Verb_Shoot</verbClass>
             <label>mini nuke</label>
             <forcedMissRadius>3.9</forcedMissRadius>
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>LibertyPrimeMiniNukeProjectile</defaultProjectile>
             <warmupTime>8.0</warmupTime>
+            <defaultCooldownTime>10</defaultCooldownTime>
             <range>55.9</range>
             <soundCast>GunTail_Heavy</soundCast>
             <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -733,7 +739,7 @@
             <targetParams>
               <canTargetLocations>true</canTargetLocations>
             </targetParams>
-            <commandIcon>GUI/Commands/missile_launcher</commandIcon>
+            <commandIcon>LibertyPrime/Items/LibertyPrime_MiniNukeAmmo</commandIcon>
           </li>
         </verbs>
         <verbProps>
@@ -745,29 +751,26 @@
         </verbProps>
       </li>
     </comps>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>1</partEfficiency>
-      <betterThanNatural>true</betterThanNatural>
-    </addedPartProps>
   </HediffDef>
 
   <ThingDef ParentName="BaseBullet">
     <defName>LibertyPrimeMiniNukeProjectile</defName>
     <label>mini nuke</label>
     <graphicData>
-      <texPath>Things/Projectile/Rocket_Big</texPath>
+      <texPath>LibertyPrime/Items/LibertyPrime_MiniNukeAmmo</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
+    <thingClass>RobotRamRod.Projectile_LibertyPrimeMiniNuke</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>80</damageAmountBase>
-      <armorPenetrationBase>0.70</armorPenetrationBase>
-      <explosionRadius>7.9</explosionRadius>
+      <damageAmountBase>120</damageAmountBase>
+      <armorPenetrationBase>0.85</armorPenetrationBase>
+      <explosionRadius>10.9</explosionRadius>
       <speed>35</speed>
+      <explosionEffect>GiantExplosion</explosionEffect>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
     </projectile>
   </ThingDef>
 </Defs>

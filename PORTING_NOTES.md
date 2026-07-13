@@ -7,7 +7,8 @@ Built and checked against RimWorld 1.6.4871.
 - Added a prototype Liberty Prime robot race, including race, pawnkind, backstory, research, crafting kit, and machining-bench recipe definitions.
 - Liberty Prime is configured as a unique, extremely expensive combat-only unit. A custom recipe worker prevents building another while Liberty Prime or a Liberty Prime kit already exists, and the hatcher blocks duplicate pawn creation as a safety fallback.
 - Replaced Liberty Prime's temporary Sentrybot-style mounted weapons with unique integrated weapons: an eye laser and a reusable mini nuke launcher.
-- Added craftable Liberty Prime mini nuke ammunition. The mini nuke launcher now requires one `LibertyPrimeMiniNukeAmmo` item in Liberty Prime's inventory and consumes one per shot.
+- Changed Liberty Prime's mini nuke launcher to a reusable integrated weapon with no ammunition requirement and a 10-second cooldown.
+- Changed Liberty Prime's eye laser from a single-shot beam to a sustained burst-beam: fast warmup, 32 rapid beam ticks, and lower damage per tick.
 - Added separate Liberty Prime PNG slices for south, north, east, a west reference, and several concept item sprites.
 - Added a dedicated 1.6 load folder and metadata.
 - Recompiled `Robots.dll` and `FaceLaserTesting.dll` against the 1.6 game assemblies.
