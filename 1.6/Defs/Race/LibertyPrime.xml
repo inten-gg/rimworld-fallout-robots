@@ -79,9 +79,9 @@
           <bodyTypes Inherit="False">
             <li>Thin</li>
           </bodyTypes>
-          <customDrawSize>(2.6, 2.6)</customDrawSize>
+          <customDrawSize>(4, 4)</customDrawSize>
           <customHeadDrawSize>(0.01, 0.01)</customHeadDrawSize>
-          <customPortraitDrawSize>(0.5, 0.5)</customPortraitDrawSize>
+          <customPortraitDrawSize>(0.77, 0.77)</customPortraitDrawSize>
           <customPortraitHeadDrawSize>(0.01, 0.01)</customPortraitHeadDrawSize>
           <headOffset>(0, 0)</headOffset>
           <colorChannels>

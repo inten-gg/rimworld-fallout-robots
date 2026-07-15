@@ -703,7 +703,7 @@
     <defName>LibertyPrimeEyeLaserBeam</defName>
     <label>sustained eye laser beam</label>
     <graphicData>
-      <texPath>Effects/Laser</texPath>
+      <texPath>Effects/LibertyPrime_EyeLaserBeam</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
       <drawSize>4</drawSize>
