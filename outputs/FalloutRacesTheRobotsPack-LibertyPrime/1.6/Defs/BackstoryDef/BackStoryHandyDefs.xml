@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="HandyDefaultChild" Abstract="True">
+    <title>Mister Handy Unit</title>
+    <titleShort>Mister Handy</titleShort>
+    <baseDesc>[PAWN_nameDef] was created to serve as a robo-butler.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>1</Shooting>
+      <Melee>1</Melee>
+      <Construction>1</Construction>
+      <Cooking>1</Cooking>
+      <Plants>1</Plants>
+      <Animals>1</Animals>
+      <Crafting>1</Crafting>
+      <Medicine>1</Medicine>
+      <Social>1</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>MrHandyCat</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Hauling</li>
+      <li>Mining</li>
+      <li>Intellectual</li>
+      <li>Artistic</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>MountedFlamethrower</li>
+    </forcedHediffs>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef Name="HandyDefaultAdult" Abstract="True">
+    <title>Mister Handy Unit</title>
+    <titleShort>Mister Handy</titleShort>
+    <baseDesc>[PAWN_nameDef] was created to serve as a robo-butler.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <spawnCategories>
+      <li>MrHandyCat</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Hauling</li>
+      <li>Mining</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy0Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy0Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy1Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy1Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy2Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy2Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy3Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy3Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy4Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy4Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy5Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy5Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy6Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy6Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy7Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy7Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy8Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy8Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy9Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy9Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy10Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy10Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy11Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy11Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultChild">
+    <defName>Handy12Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="HandyDefaultAdult">
+    <defName>Handy12Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+</Defs>

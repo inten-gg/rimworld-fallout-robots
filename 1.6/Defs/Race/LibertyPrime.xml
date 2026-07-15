@@ -81,7 +81,7 @@
           </bodyTypes>
           <customDrawSize>(4, 4)</customDrawSize>
           <customHeadDrawSize>(0.01, 0.01)</customHeadDrawSize>
-          <customPortraitDrawSize>(0.77, 0.77)</customPortraitDrawSize>
+          <customPortraitDrawSize>(4, 4)</customPortraitDrawSize>
           <customPortraitHeadDrawSize>(0.01, 0.01)</customPortraitHeadDrawSize>
           <headOffset>(0, 0)</headOffset>
           <colorChannels>
