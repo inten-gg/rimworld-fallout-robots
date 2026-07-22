@@ -77,11 +77,15 @@
             <li>LibertyPrime_Average_Normal</li>
           </headTypes>
           <bodyTypes Inherit="False">
-            <li>Thin</li>
+            <li>Male</li>
           </bodyTypes>
-          <customDrawSize>(2.6, 2.6)</customDrawSize>
+<<<<<<< Updated upstream
+          <customDrawSize>(2.0, 2.0)</customDrawSize>
+=======
+          <customDrawSize>(4, 4)</customDrawSize>
+>>>>>>> Stashed changes
           <customHeadDrawSize>(0.01, 0.01)</customHeadDrawSize>
-          <customPortraitDrawSize>(0.5, 0.5)</customPortraitDrawSize>
+          <customPortraitDrawSize>(4, 4)</customPortraitDrawSize>
           <customPortraitHeadDrawSize>(0.01, 0.01)</customPortraitHeadDrawSize>
           <headOffset>(0, 0)</headOffset>
           <colorChannels>
