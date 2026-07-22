@@ -124,7 +124,7 @@ Mounted Missle Launcher
 Mounted Minigun
 Liberty Prime sustained eye laser
 Liberty Prime reusable mini nuke launcher with a 10-second cooldown
-The hidden West direction was added
+Liberty Prime has a complete updated four-direction body texture set
 
 This mod requires 
 Jecs Tools

@@ -9,7 +9,7 @@ Built and checked against RimWorld 1.6.4871.
 - Replaced Liberty Prime's temporary Sentrybot-style mounted weapons with unique integrated weapons: an eye laser and a reusable mini nuke launcher.
 - Changed Liberty Prime's mini nuke launcher to a reusable integrated weapon with no ammunition requirement and a 10-second cooldown.
 - Changed Liberty Prime's eye laser from a single-shot beam to a sustained burst-beam: fast warmup, 32 rapid beam ticks, and lower damage per tick.
-- Added separate Liberty Prime PNG slices for south, north, east, a west reference, and several concept item sprites.
+- Added a complete updated Liberty Prime four-direction body texture set, plus transparent head placeholders because the new body sprites include the head.
 - Added a dedicated 1.6 load folder and metadata.
 - Recompiled `Robots.dll` and `FaceLaserTesting.dll` against the 1.6 game assemblies.
 - Updated `PlanetTile`, allowed-area, and protected tick APIs changed by RimWorld 1.6.
