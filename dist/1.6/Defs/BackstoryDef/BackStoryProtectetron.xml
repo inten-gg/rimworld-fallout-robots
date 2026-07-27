@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="ProtectetronDefaultChild" Abstract="True">
+    <title>Protectetron Unit</title>
+    <titleShort>Protectetron</titleShort>
+    <baseDesc>[PAWN_nameDef] was created to serve as a robo-worker.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>1</Shooting>
+      <Melee>1</Melee>
+      <Construction>1</Construction>
+      <Cooking>1</Cooking>
+      <Plants>1</Plants>
+      <Animals>1</Animals>
+      <Crafting>1</Crafting>
+      <Social>1</Social>
+      <Mining>1</Mining>
+    </skillGains>
+    <spawnCategories>
+      <li>ProtectetronCat</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Intellectual</li>
+      <li>Artistic</li>
+      <li>Caring</li>
+      <li>Cleaning</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>WeakLeftLaser</li>
+      <li>WeakMiddleLaser</li>
+      <li>WeakRightLaser</li>
+    </forcedHediffs>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef Name="ProtectetronDefaultAdult" Abstract="True">
+    <title>Protectetron Unit</title>
+    <titleShort>Protectetron</titleShort>
+    <baseDesc>[PAWN_nameDef] was created to serve as a robo-worker.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <spawnCategories>
+      <li>ProtectetronCat</li>
+    </spawnCategories>
+    <workDisables>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron0Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron0Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron1Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron1Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron2Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron2Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron3Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron3Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron4Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron4Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron5Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron5Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron6Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron6Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron7Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron7Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron8Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron8Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron9Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron9Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron10Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron10Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron11Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron11Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultChild">
+    <defName>Protectetron12Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="ProtectetronDefaultAdult">
+    <defName>Protectetron12Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+</Defs>
