@@ -118,18 +118,28 @@ public class CompEquippableTurret : CompWearable
     public void SwitchOnTurret()
     {
         var intVec = GetWearer.DrawPos.ToIntVec3();
-        if (!turret.DestroyedOrNull() && intVec != turret.Position)
+        var map = GetWearer.Map;
+
+        if (!turret.DestroyedOrNull())
         {
-            MoveTurret(intVec);
+            if (!turret.Spawned)
+            {
+                GenSpawn.Spawn(turret, intVec, map);
+            }
+            else if (intVec != turret.Position)
+            {
+                MoveTurret(intVec);
+            }
+
+            return;
         }
 
-        if (!turret.DestroyedOrNull() && turret.Spawned ||
-            intVec.GetFirstThing(GetWearer.Map, Props.TurretDef) != null)
+        if (intVec.GetFirstThing(map, Props.TurretDef) != null)
         {
             return;
         }
 
-        turret = GenSpawn.Spawn(Props.TurretDef, intVec, GetWearer.Map);
+        turret = GenSpawn.Spawn(Props.TurretDef, intVec, map);
         turret.SetFactionDirect(GetWearer.Faction);
         ((Building_Turret_Shoulder)turret).Parental = GetWearer;
     }
@@ -144,10 +154,20 @@ public class CompEquippableTurret : CompWearable
 
     public void MoveTurret(IntVec3 intVec)
     {
-        if (!turret.DestroyedOrNull())
+        if (turret.DestroyedOrNull() || intVec == turret.Position)
+        {
+            return;
+        }
+
+        if (!turret.Spawned)
         {
             turret.Position = intVec;
+            return;
         }
+
+        var map = turret.Map;
+        turret.DeSpawn();
+        GenSpawn.Spawn(turret, intVec, map);
     }
 
     public override IEnumerable<Gizmo> CompGetGizmosWorn()

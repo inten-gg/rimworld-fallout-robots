@@ -62,7 +62,7 @@ public class RobotCompHatcher : ThingComp
                 return;
             }
 
-            var request = new PawnGenerationRequest(Props.hatcherPawn, Faction.OfPlayer,
+            var request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction ?? Faction.OfPlayer,
                 PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 1f, false, true, allowFood: true,
                 allowAddictions: false);
             for (var i = 0; i < parent.stackCount; i++)

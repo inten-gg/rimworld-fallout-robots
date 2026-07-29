@@ -1,4 +1,5 @@
 using System.Linq;
+using RimWorld.Planet;
 using Verse;
 
 namespace RobotRamRod;
@@ -34,6 +35,20 @@ public static class LibertyPrimeUtility
         foreach (var map in Find.Maps)
         {
             if (map.listerThings.ThingsOfDef(libertyPrimeKit).Any())
+            {
+                return true;
+            }
+
+            if (map.mapPawns.AllPawns.Any(pawn =>
+                    pawn.inventory?.innerContainer.Any(thing => thing.def == libertyPrimeKit) == true))
+            {
+                return true;
+            }
+        }
+
+        foreach (var caravan in Find.WorldObjects.Caravans)
+        {
+            if (caravan.AllThings.Any(thing => thing.def == libertyPrimeKit))
             {
                 return true;
             }
