@@ -24,7 +24,7 @@ public class RobotCompHatcher : ThingComp
         get
         {
             var freezerComp = FreezerComp;
-            return freezerComp != null && FreezerComp.Ruined;
+            return freezerComp != null && freezerComp.Ruined;
         }
     }
 
@@ -93,10 +93,6 @@ public class RobotCompHatcher : ThingComp
                         {
                             pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, otherParent);
                         }
-                    }
-
-                    if (parent.Spawned)
-                    {
                     }
                 }
                 else
