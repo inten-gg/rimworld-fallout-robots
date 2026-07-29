@@ -79,6 +79,8 @@
           <bodyTypes Inherit="False">
             <li>Male</li>
           </bodyTypes>
+          <borderScale>4</borderScale>
+          <atlasScale>2</atlasScale>
           <customDrawSize>(4, 4)</customDrawSize>
           <customHeadDrawSize>(0.01, 0.01)</customHeadDrawSize>
           <customPortraitDrawSize>(4, 4)</customPortraitDrawSize>
