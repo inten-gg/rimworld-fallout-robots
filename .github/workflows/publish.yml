@@ -1,0 +1,70 @@
+name: Publish to Steam Workshop
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (pure semver, e.g. 1.2.3)'
+        required: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.x
+
+      - name: Build & package mod
+        run: dotnet pack --configuration Release
+
+      - name: Generate changelog from conventional commits
+        id: changelog
+        run: |
+          PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || true)
+          if [ -z "$PREV_TAG" ]; then
+            CHANGELOG="Initial release"
+          else
+            npx --yes conventional-changelog-cli -p angular -r 0 -o /tmp/changelog_full.md 2>/dev/null
+            CHANGELOG=$(awk '/^## \[Unreleased\]/{flag=1; next} /^# \[/{flag=0} flag' /tmp/changelog_full.md)
+            [ -z "$CHANGELOG" ] && CHANGELOG="No changes since last release"
+          fi
+          {
+            echo "changelog<<EOF"
+            echo "v${{ github.event.inputs.version }}"
+            echo "$CHANGELOG"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create tag and release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.event.inputs.version }}
+          body: ${{ steps.changelog.outputs.changelog }}
+          make_latest: true
+
+      - name: Write published file ID
+        run: echo "${{ vars.WORKSHOP_PUBLISHED_FILE_ID }}" > dist/About/PublishedFileId.txt
+
+      - name: Generate Steam TOTP
+        uses: CyberAndrii/steam-totp@v1
+        id: steam-totp
+        with:
+          shared_secret: ${{ secrets.STEAM_SHARED_SECRET }}
+
+      - name: Deploy to Steam Workshop
+        uses: m00nl1ght-dev/steam-workshop-deploy@v4
+        with:
+          username: ${{ secrets.STEAM_USERNAME }}
+          password: ${{ secrets.STEAM_PASSWORD }}
+          totp: ${{ steps.steam-totp.outputs.code }}
+          path: dist
+          appId: 294100
+          publishedFileId: ${{ vars.WORKSHOP_PUBLISHED_FILE_ID }}
+          changeNote: ${{ steps.changelog.outputs.changelog }}
