@@ -24,7 +24,7 @@ public class RobotCompHatcher : ThingComp
         get
         {
             var freezerComp = FreezerComp;
-            return freezerComp != null && freezerComp.Ruined;
+            return freezerComp != null && FreezerComp.Ruined;
         }
     }
 
@@ -62,7 +62,7 @@ public class RobotCompHatcher : ThingComp
                 return;
             }
 
-            var request = new PawnGenerationRequest(Props.hatcherPawn, hatcheeFaction ?? Faction.OfPlayer,
+            var request = new PawnGenerationRequest(Props.hatcherPawn, Faction.OfPlayer,
                 PawnGenerationContext.NonPlayer, -1, false, false, false, true, false, 1f, false, true, allowFood: true,
                 allowAddictions: false);
             for (var i = 0; i < parent.stackCount; i++)
@@ -93,6 +93,10 @@ public class RobotCompHatcher : ThingComp
                         {
                             pawn.relations.AddDirectRelation(PawnRelationDefOf.Parent, otherParent);
                         }
+                    }
+
+                    if (parent.Spawned)
+                    {
                     }
                 }
                 else
