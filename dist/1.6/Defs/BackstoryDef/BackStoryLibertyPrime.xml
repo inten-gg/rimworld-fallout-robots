@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.AlienBackstoryDef Name="LibertyPrimeDefaultChild" Abstract="True">
+    <title>Liberty Prime Unit</title>
+    <titleShort>Liberty Prime</titleShort>
+    <baseDesc>[PAWN_nameDef] was assembled from pre-war super-heavy combat robotics and rebuilt as a walking symbol of overwhelming force.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+      <Shooting>14</Shooting>
+      <Melee>10</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>LibertyPrimeCat</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Cleaning</li>
+      <li>ManualDumb</li>
+      <li>Mining</li>
+      <li>Crafting</li>
+      <li>Artistic</li>
+      <li>ManualSkilled</li>
+      <li>Caring</li>
+      <li>Animals</li>
+      <li>Cooking</li>
+      <li>PlantWork</li>
+      <li>Intellectual</li>
+      <li>Hauling</li>
+      <li>Social</li>
+    </workDisables>
+    <forcedHediffs>
+      <li>LibertyPrimeEyeLaser</li>
+      <li>LibertyPrimeMiniNukeLauncher</li>
+    </forcedHediffs>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef Name="LibertyPrimeDefaultAdult" Abstract="True">
+    <title>Liberty Prime Unit</title>
+    <titleShort>Liberty Prime</titleShort>
+    <baseDesc>[PAWN_nameDef] was designed for siege warfare, propaganda-grade intimidation, and walking through problems that smaller robots politely route around.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeGlobal>Male</bodyTypeGlobal>
+    <spawnCategories>
+      <li>LibertyPrimeCat</li>
+    </spawnCategories>
+    <workDisables>
+      <li>Cleaning</li>
+      <li>ManualDumb</li>
+      <li>Mining</li>
+      <li>Crafting</li>
+      <li>Artistic</li>
+      <li>ManualSkilled</li>
+      <li>Caring</li>
+      <li>Animals</li>
+      <li>Cooking</li>
+      <li>PlantWork</li>
+      <li>Intellectual</li>
+      <li>Hauling</li>
+      <li>Social</li>
+    </workDisables>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="LibertyPrimeDefaultChild">
+    <defName>LibertyPrime0Child</defName>
+  </AlienRace.AlienBackstoryDef>
+  <AlienRace.AlienBackstoryDef ParentName="LibertyPrimeDefaultAdult">
+    <defName>LibertyPrime0Adult</defName>
+  </AlienRace.AlienBackstoryDef>
+</Defs>
