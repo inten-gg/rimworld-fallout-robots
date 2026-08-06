@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FaceLaserTesting/FaceLaserTesting.csproj" />
+    <Project Path="src/Robots/Robots.csproj" />
+  </Folder>
+</Solution>

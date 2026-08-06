@@ -1,0 +1,23 @@
+<Project>
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <OutputPath>$(MSBuildThisFileDirectory)dist\Assemblies\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DebugType>None</DebugType>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(RimWorldPath)'==''">
+    <RimWorldPath>C:\Program Files (x86)\Steam\steamapps\common\RimWorld</RimWorldPath>
+    <RimWorldPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">$(HOME)/.steam/steam/steamapps/common/RimWorld</RimWorldPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <UseLocalRimWorldRefs Condition="Exists('$(RimWorldPath)\RimWorldWin64_Data\Managed\Assembly-CSharp.dll')">true</UseLocalRimWorldRefs>
+  </PropertyGroup>
+
+</Project>
