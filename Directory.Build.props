@@ -1,11 +1,16 @@
 <Project>
 
+  <!-- Per-mod identity. Everything else lives in Directory.Build.targets /
+       Directory.Packages.props, which are identical across all inten-gg mod repos.
+
+       No repo-wide AssemblyName/RootNamespace here: this repo builds two assemblies
+       (Robots and FaceLaserTesting), and the Defs reference both by namespace. -->
+
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <OutputPath>$(MSBuildThisFileDirectory)dist\Assemblies\</OutputPath>
+    <ModDevName>Fallout Races: The Robots Pack (Continued) (DEV)</ModDevName>
+    <ModDevPackageId>fMlie.FalloutRacesTheRobotsPack.dev</ModDevPackageId>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <DebugType>None</DebugType>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <Nullable>disable</Nullable>
     <LangVersion>latest</LangVersion>
