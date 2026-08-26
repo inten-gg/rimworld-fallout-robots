@@ -9,7 +9,7 @@
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <ModDevName>Fallout Races: The Robots Pack (Continued) (DEV)</ModDevName>
-    <ModDevPackageId>fMlie.FalloutRacesTheRobotsPack.dev</ModDevPackageId>
+    <ModDevPackageId>gg.inten.rimworld.fallout.robots.dev</ModDevPackageId>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
     <Nullable>disable</Nullable>

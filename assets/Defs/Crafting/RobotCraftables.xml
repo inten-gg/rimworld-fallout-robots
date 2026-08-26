@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Abstract="True" Name="EggsBase" ParentName="OrganicProductBase">
     <graphicData>
@@ -55,7 +55,7 @@
     <tradeability>None</tradeability>
     <generateCommonality>0</generateCommonality>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_Protectetron_Colonist</hatcherPawn>
       </li>
@@ -76,7 +76,7 @@
     <tradeability>None</tradeability>
     <generateCommonality>0</generateCommonality>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_Handy_Colonist</hatcherPawn>
       </li>
@@ -96,7 +96,7 @@
     </statBases>
     <tradeability>None</tradeability>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_Nurse_Handy_Colonist</hatcherPawn>
       </li>
@@ -118,7 +118,7 @@
     <tradeability>None</tradeability>
     <generateCommonality>0</generateCommonality>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_Mister_Gutsy_Colonist</hatcherPawn>
       </li>
@@ -139,7 +139,7 @@
     <tradeability>None</tradeability>
     <generateCommonality>0</generateCommonality>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_Securitron_Colonist</hatcherPawn>
       </li>
@@ -160,7 +160,7 @@
     <tradeability>None</tradeability>
     <generateCommonality>0</generateCommonality>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_ScrapBot_Colonist</hatcherPawn>
       </li>
@@ -180,7 +180,7 @@
     </statBases>
     <tradeability>None</tradeability>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_Assaultron_Colonist</hatcherPawn>
       </li>
@@ -200,7 +200,7 @@
     </statBases>
     <tradeability>None</tradeability>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_Sentrybot_Colonist</hatcherPawn>
       </li>
@@ -221,7 +221,7 @@
     <tradeability>None</tradeability>
     <generateCommonality>0</generateCommonality>
     <comps>
-      <li Class="RobotRamRod.RobotCompProperties_Hatcher">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotRamRod.RobotCompProperties_Hatcher">
         <hatcherDaystoHatch>0.00001</hatcherDaystoHatch>
         <hatcherPawn>Robot_LibertyPrime_Colonist</hatcherPawn>
       </li>
@@ -672,7 +672,7 @@
     <label>Create Liberty Prime</label>
     <description>Create the unique Liberty Prime unit. Only one Liberty Prime, or one unfinished Liberty Prime kit, can exist at a time.</description>
     <jobString>Making Robot</jobString>
-    <workerClass>RobotRamRod.RecipeWorker_OneLibertyPrime</workerClass>
+    <workerClass>Inten.Rimworld.Fallout.Robots.RobotRamRod.RecipeWorker_OneLibertyPrime</workerClass>
     <allowMixingIngredients>false</allowMixingIngredients>
     <skillRequirements>
       <Crafting>18</Crafting>

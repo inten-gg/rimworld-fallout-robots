@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Fallout Races: The Robots Pack (Continued)</name>
-  <packageId>Mlie.FalloutRacesTheRobotsPack</packageId>
+  <packageId>gg.inten.rimworld.fallout.robots</packageId>
   <author>RamRod</author>
   <url>https://github.com/emipa606/FalloutRacesTheRobotsPack</url>
   <supportedVersions>

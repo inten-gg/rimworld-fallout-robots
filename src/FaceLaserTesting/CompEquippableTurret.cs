@@ -3,7 +3,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace FaceLaserTesting;
+namespace Inten.Rimworld.Fallout.Robots.FaceLaserTesting;
 
 public class CompEquippableTurret : CompWearable
 {

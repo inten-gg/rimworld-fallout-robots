@@ -1,9 +1,9 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 using Verse.AI;
 
-namespace FaceLaserTesting;
+namespace Inten.Rimworld.Fallout.Robots.FaceLaserTesting;
 
 [HarmonyPatch(typeof(Building_Turret), "ThreatDisabled")]
 public static class AvP_Building_Turret_Shoulder_ThreatDisabled_Patch

@@ -1,7 +1,7 @@
 using RimWorld;
 using Verse;
 
-namespace RobotRamRod;
+namespace Inten.Rimworld.Fallout.Robots.RobotRamRod;
 
 public class RecipeWorker_OneLibertyPrime : RecipeWorker
 {

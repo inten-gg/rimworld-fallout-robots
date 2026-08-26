@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>NurseHandy</defName>
@@ -867,7 +867,7 @@
       <ComponentIndustrial>4</ComponentIndustrial>
     </butcherProducts>
     <modExtensions>
-      <li Class="RobotStuff.RobotEdit">
+      <li Class="Inten.Rimworld.Fallout.Robots.RobotStuff.RobotEdit">
         <removeCorpseRot>true</removeCorpseRot>
       </li>
     </modExtensions>

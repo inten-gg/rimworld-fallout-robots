@@ -1,6 +1,6 @@
 using Verse;
 
-namespace RobotStuff;
+namespace Inten.Rimworld.Fallout.Robots.RobotStuff;
 
 /// <summary>
 /// Gives a race its permanent robot-traits hediff without depending on JecsTools.

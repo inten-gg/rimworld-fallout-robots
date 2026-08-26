@@ -1,7 +1,7 @@
-﻿using RimWorld;
+using RimWorld;
 using Verse;
 
-namespace RobotStuff;
+namespace Inten.Rimworld.Fallout.Robots.RobotStuff;
 
 /// <summary>
 ///     Tweaks ThingDefs after the game has been made.

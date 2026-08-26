@@ -1,5 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
+  <PropertyGroup>
+    <AssemblyName>Inten.Rimworld.Fallout.Robots</AssemblyName>
+    <RootNamespace>Inten.Rimworld.Fallout.Robots</RootNamespace>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref" />
   </ItemGroup>

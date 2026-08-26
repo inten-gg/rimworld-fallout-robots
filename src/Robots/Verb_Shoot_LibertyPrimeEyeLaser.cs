@@ -2,7 +2,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace RobotRamRod;
+namespace Inten.Rimworld.Fallout.Robots.RobotRamRod;
 
 public class Verb_Shoot_LibertyPrimeEyeLaser : Verb_Shoot
 {

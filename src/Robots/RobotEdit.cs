@@ -1,6 +1,6 @@
-﻿using Verse;
+using Verse;
 
-namespace RobotStuff;
+namespace Inten.Rimworld.Fallout.Robots.RobotStuff;
 
 /// <summary>
 ///     Marks the ThingDef for being tweaked on initialisation.

@@ -4,7 +4,7 @@ using UnityEngine;
 using Verse;
 using Verse.Sound;
 
-namespace FaceLaserTesting;
+namespace Inten.Rimworld.Fallout.Robots.FaceLaserTesting;
 
 public class Building_Turret_Shoulder : Building_TurretGun
 {

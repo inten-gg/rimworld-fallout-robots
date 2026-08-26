@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Verse;
 
-namespace FaceLaserTesting;
+namespace Inten.Rimworld.Fallout.Robots.FaceLaserTesting;
 
 public abstract class CompWearable : ThingComp
 {
