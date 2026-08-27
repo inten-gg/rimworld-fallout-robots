@@ -2,7 +2,7 @@ using System.Reflection;
 using HarmonyLib;
 using Verse;
 
-namespace FaceLaserTesting;
+namespace Inten.Rimworld.Fallout.Robots.FaceLaserTesting;
 
 [StaticConstructorOnStartup]
 internal class Main

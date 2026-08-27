@@ -1,32 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Inten.Rimworld.Fallout.Robots</AssemblyName>
+    <RootNamespace>Inten.Rimworld.Fallout.Robots</RootNamespace>
+  </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref" />
   </ItemGroup>
-
-  <Target Name="PackMod" AfterTargets="Build;Pack;Publish">
-        <PropertyGroup>
-            <DistDir>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../../dist/'))</DistDir>
-        </PropertyGroup>
-
-        <ItemGroup>
-            <_AssetFiles Include="$(MSBuildProjectDirectory)/../../assets/**/*" />
-        </ItemGroup>
-        
-        <Copy SourceFiles="@(_AssetFiles)"
-            DestinationFiles="@(_AssetFiles->'$(DistDir)%(RecursiveDir)%(Filename)%(Extension)')" />
-        
-        <Copy SourceFiles="$(MSBuildProjectDirectory)/../../LICENSE.txt"
-            DestinationFolder="$(DistDir)"
-            Condition="Exists('$(MSBuildProjectDirectory)/../../LICENSE.txt')" />
-        
-        <XmlPoke XmlInputPath="$(DistDir)About/About.xml" Query="/ModMetaData/name"
-            Value="Fallout Races: The Robots Pack (Continued) (DEV)" Condition="'$(Configuration)'=='Debug'" />
-
-        <XmlPoke XmlInputPath="$(DistDir)About/About.xml" Query="/ModMetaData/packageId"
-            Value="fMlie.FalloutRacesTheRobotsPack.dev" Condition="'$(Configuration)'=='Debug'" />
-        
-        <Message Text="Mod packaged → $(DistDir)" Importance="high" />
-    </Target>
 
 </Project>

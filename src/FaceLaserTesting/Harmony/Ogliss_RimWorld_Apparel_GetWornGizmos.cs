@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using HarmonyLib;
 using RimWorld;
 using Verse;
 
-namespace FaceLaserTesting;
+namespace Inten.Rimworld.Fallout.Robots.FaceLaserTesting;
 
 [HarmonyPatch(typeof(Apparel), "GetWornGizmos")]
 public static class Ogliss_RimWorld_Apparel_GetWornGizmos

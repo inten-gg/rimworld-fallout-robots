@@ -1,4 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Inten.Rimworld.Fallout.Robots.FaceLaserTesting</AssemblyName>
+    <RootNamespace>Inten.Rimworld.Fallout.Robots.FaceLaserTesting</RootNamespace>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref" />
     <PackageReference Include="Lib.Harmony" />

@@ -1,9 +1,9 @@
-﻿using RimWorld;
+using RimWorld;
 using RimWorld.Planet;
 using UnityEngine;
 using Verse;
 
-namespace RobotRamRod;
+namespace Inten.Rimworld.Fallout.Robots.RobotRamRod;
 
 public class RobotCompHatcher : ThingComp
 {

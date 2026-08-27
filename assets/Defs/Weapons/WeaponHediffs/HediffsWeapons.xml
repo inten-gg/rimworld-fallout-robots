@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <MVCF.ModDef>
     <defName>FalloutRacesTheRobotsPack</defName>
@@ -670,7 +670,7 @@
       <li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
         <verbs>
           <li>
-            <verbClass>RobotRamRod.Verb_Shoot_LibertyPrimeEyeLaser</verbClass>
+            <verbClass>Inten.Rimworld.Fallout.Robots.RobotRamRod.Verb_Shoot_LibertyPrimeEyeLaser</verbClass>
             <label>sustained eye laser</label>
             <accuracyTouch>0.90</accuracyTouch>
             <accuracyShort>0.95</accuracyShort>
@@ -762,7 +762,7 @@
       <shaderType>TransparentPostLight</shaderType>
       <drawSize>1.5</drawSize>
     </graphicData>
-    <thingClass>RobotRamRod.Projectile_LibertyPrimeMiniNuke</thingClass>
+    <thingClass>Inten.Rimworld.Fallout.Robots.RobotRamRod.Projectile_LibertyPrimeMiniNuke</thingClass>
     <projectile>
       <damageDef>Bomb</damageDef>
       <damageAmountBase>120</damageAmountBase>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- ========================= Yautja - Equipment base ========================== -->
   <ThingDef Name="RamRodRobotParts" ParentName="ArmorHelmetMakeableBase" Abstract="true">
@@ -44,7 +44,7 @@
     <defName>RamRod_FaceTurret</defName>
     <label>face-laser AI</label>
     <description>A deadly face-laser that thinks independently from the pawn.</description>
-    <thingClass>FaceLaserTesting.Building_Turret_Shoulder</thingClass>
+    <thingClass>Inten.Rimworld.Fallout.Robots.FaceLaserTesting.Building_Turret_Shoulder</thingClass>
     <!--
 	<thingClass>Building_TurretGun</thingClass>
     -->
@@ -142,7 +142,7 @@
     </graphicData>
     <tickerType>Normal</tickerType>
     <comps>
-      <li Class="FaceLaserTesting.CompProperties_EquippableTurret">
+      <li Class="Inten.Rimworld.Fallout.Robots.FaceLaserTesting.CompProperties_EquippableTurret">
         <TurretDef>RamRod_FaceTurret</TurretDef>
         <OnByDefault>true</OnByDefault>
       </li>

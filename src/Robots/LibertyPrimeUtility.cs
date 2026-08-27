@@ -1,7 +1,7 @@
 using System.Linq;
 using Verse;
 
-namespace RobotRamRod;
+namespace Inten.Rimworld.Fallout.Robots.RobotRamRod;
 
 public static class LibertyPrimeUtility
 {

@@ -1,6 +1,6 @@
-﻿using Verse;
+using Verse;
 
-namespace RobotRamRod;
+namespace Inten.Rimworld.Fallout.Robots.RobotRamRod;
 
 public class RobotCompProperties_Hatcher : CompProperties
 {

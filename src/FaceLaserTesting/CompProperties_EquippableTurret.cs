@@ -1,6 +1,6 @@
 using Verse;
 
-namespace FaceLaserTesting;
+namespace Inten.Rimworld.Fallout.Robots.FaceLaserTesting;
 
 public class CompProperties_EquippableTurret : CompProperties
 {
